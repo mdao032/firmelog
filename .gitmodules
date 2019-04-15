@@ -1,0 +1,6 @@
+[submodule "firmelog-ui"]
+	path = firmelog-ui
+	url = https://github.com/mdao032/firmelog-ui
+[submodule "firmelog-serv"]
+	path = firmelog-serv
+	url = https://github.com/mdao032/firmelog-serv
