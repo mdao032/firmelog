@@ -1,0 +1,3 @@
+db.annonce.insert( {
+
+})
