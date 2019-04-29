@@ -2,13 +2,9 @@ db.createCollection("annonce", {
     validator: {
         $jsonSchema: {
             bsonType: "object",
-            required: ["annonce_id", "title", "available", "timestampCreation", "timestampUpdate",
+            required: ["title", "available", "timestampCreation", "timestampUpdate",
                         "product"],
             properties: {
-                annonce_id: {
-                    bsonType: "string",
-                    description: "must be a int and is required"
-                },
                 title: {
                     bsonType: "string",
                     description: "must be a string and is required"
@@ -27,7 +23,7 @@ db.createCollection("annonce", {
                 },
                 product: {
                     bsonType: "object",
-                    required: ["product_id", "name", "description", "price", "availability_place", "delivery_places", "deliveryMethod"],
+                    required: ["name", "description", "price", "availability_place", "delivery_places", "deliveryMethod"],
                     properties: {
                         name: {
                             bsonType: "string",
